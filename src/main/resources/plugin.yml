@@ -1,0 +1,6 @@
+name: DonationSocket
+version: 1.0
+main: dev.gaffaq.DonationSocket
+api-version: 1.21
+author: GaffaQ
+description: Menerima notifikasi donasi dari website minelux

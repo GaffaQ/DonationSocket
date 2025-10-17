@@ -1,0 +1,26 @@
+server:
+# ini port harus dibuka, soalnya tar backend web kirim socket ke port ini
+  port: 19132
+  # ini token buat validate socket bener dari minelux atau luar
+  token: "SECRET123"
+
+# Daftar IP yang boleh kirim socket
+whitelist:
+  - "127.0.0.1"
+  - "192.168.1.10"
+
+# Pesan broadcast (pakai placeholder)
+# daftar placeholdernya
+# {username} - nama user yang donasi
+# {amount} - jumlah donasi
+# {package} - apa yang dibeli (VIP, COIN DLL)
+broadcast:
+  message: "&6{username} &eberdonasi sebesar &aRp{amount}&e dan mendapatkan paket &b{package}&e! 🎉"
+  # COntoh: "ENTITY_PLAYER_LEVELUP", "ENTITY_EXPERIENCE_ORB_PICKUP", "BLOCK_ANVIL_USE"
+  sounds:
+    - "ENTITY_PLAYER_LEVELUP"
+    - "ENTITY_EXPERIENCE_ORB_PICKUP"
+
+# Command yang dijalankan
+commands:
+  - "say Terima kasih {username} atas donasinya!"
